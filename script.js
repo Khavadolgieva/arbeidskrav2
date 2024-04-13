@@ -2,7 +2,6 @@
 const productList = document.getElementById("product-list");
 const categoryFilter = document.getElementById("category-filter");
 const searchInput = document.getElementById("search-input");
-const burger = document.querySelector(".burger");
 const navLinks = document.querySelector(".nav-links");
 
 // Hent produktdata fra API
@@ -65,7 +64,7 @@ function displayProducts(products) {
     }
 
     detailsButton.onclick = function () {
-      viewProductDetails(product.id); // Assuming 'product' is in scope and has an 'id' property
+      viewProductDetails(product.id); 
     };
 
     productElement.appendChild(productImage);
@@ -78,11 +77,3 @@ function displayProducts(products) {
   });
 }
 
-// Funksjon for å håndtere responsiv meny
-function toggleMenu() {
-  navLinks.classList.toggle("nav-active");
-  burger.classList.toggle("toggle");
-}
-
-// Lytt etter klikk på burger-menyen
-burger.addEventListener("click", toggleMenu);

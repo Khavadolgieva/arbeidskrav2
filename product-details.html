@@ -2,34 +2,45 @@
 <html>
 <head>
   <title>Produktdetaljer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="product-details.css">
   <link rel="stylesheet" href="header.css">
 </head>
 <body>
-
   <header>
-    <nav>
+    <div class="top-header">
       <div class="logo">Nettbutikk</div>
-      <ul class="nav-links">
-        <li><a href="/">Hjem</a></li>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="/wishlist.html">Wishlist</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Søk etter produkter">
+        <img class="vector" src="Vector.png" alt="søkelogo">
       </div>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li><a href="/">HJEM</a></li>
+        <li><a href="#">PRODUKTER</a></li>
+        <li><a href="#">OM OSS</a></li>
+        <li><a href="#">KONTAKT</a></li>
+        <li><a href="/wishlist.html">WISHLIST</a></li>
+      </ul>
     </nav>
   </header>
 
-  <h1>Produktdetaljer</h1>
+  <section>
+    <h1>Produktdetaljer</h1>
   
-  <div id="product-details"></div>
+    <div id="product-details" class="product-container">
+    </div>
+    
+    <div class="buttons-container">
+      <button onclick="goBack()">Tilbake til produktlisten</button>
+    </div>
+  </section>
   
-  <button onclick="goBack()">Tilbake til produktlisten</button>
+
+  <footer>
+    <p class="footer-text">&copy; 2023 Nettbutikk. Alle rettigheter forbeholdt.</p>
+  </footer>
   
   <script src="product-details.js"></script>
 </body>

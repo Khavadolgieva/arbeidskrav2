@@ -3,38 +3,42 @@
 <head>
   <title>Produktliste</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="header.css">
 </head>
 <body>
   <header>
-    <nav>
+    <div class="top-header">
       <div class="logo">Nettbutikk</div>
-      <ul class="nav-links">
-        <li><a href="/">Hjem</a></li>
-        <li><a href="#">Produkter</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">Kontakt</a></li>
-        <li><a href="/wishlist.html">Wishlist</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Søk etter produkter">
+        <img class="vector" src="Vector.png" alt="søkelogo">
       </div>
+    </div>
+    <nav class="nav-container">
+      <ul class="nav-links">
+        <li><a href="/">HJEM</a></li>
+        <li><a href="#">PRODUKTER</a></li>
+        <li><a href="#">OM OSS</a></li>
+        <li><a href="#">KONTAKT</a></li>
+        <li><a href="/wishlist.html">WISHLIST</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Velkommen til vår nettbutikk</h1>
-      <p>Oppdag vårt brede utvalg av produkter</p>
+      <img class="hero-bg" src="hero.png" alt="hero image">
+      <div class="hero-content">
+        <p>OPPDAG VÅRT BREDE UTVALG AV PRODUKTER</p>
+        <h1>VELKOMMEN TIL VÅR NETTBUTIKK</h1>
+      </div>
     </section>
 
     <section class="products">
       <div class="filters">
-        <label for="category-filter">Filtrer etter kategori:</label>
+        <label class="filtrering" for="category-filter">Filtrer etter kategori:</label>
         <select id="category-filter">
           <option value="">Alle</option>
           <option value="men's clothing">Herreklær</option>
@@ -42,7 +46,6 @@
           <option value="jewelery">Smykker</option>
           <option value="electronics">Elektronikk</option>
         </select>
-        <input type="text" id="search-input" placeholder="Søk etter produkter">
       </div>
 
       <div id="product-list" class="product-grid"></div>
@@ -50,7 +53,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Nettbutikk. Alle rettigheter forbeholdt.</p>
+    <p class="footer-text">&copy; 2023 Nettbutikk. Alle rettigheter forbeholdt.</p>
   </footer>
 
   <script src="script.js"></script>

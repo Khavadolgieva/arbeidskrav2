@@ -1,44 +1,67 @@
-/* css code for header */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .burger div {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
+  padding: 34px 77px;
+  color: #323334;
+  font-family: Roboto;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 28px;
+font-style: normal;
+font-weight: 700;
+}
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#search-input {
+  width: 244px;
+  height: 40px;
+  padding: 8px 30px 8px 8px; 
+  border: none;
+  border-radius: 10px;
+  background: #E7E7E7;
+}
+
+.vector {
+  position: absolute;
+  right: 10px; 
+  height: 20px; 
+  cursor: pointer;
+}
+
+.nav-container {
+  padding: 35px 0;
+  border-top: 1px solid #333;
+  border-bottom:  1px solid #333;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+  padding: 0 15px;
+}
+
+.nav-links li a:hover {
+  color: #A86A3D;
+}

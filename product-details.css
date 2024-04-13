@@ -1,1 +1,51 @@
+section {
+    font-family: Roboto;
+    padding: 0 300px;
+}
 
+h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+
+
+img {
+    height: 270px;
+}
+
+button {
+ margin: 20px 0;
+ padding: 10px 20px;
+ font-size: 16px;
+ color: #fff;
+ background-color: #A86A3D;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+  
+button:hover {
+  background-color: #5e3e28;
+}
+  
+button:focus {
+  outline: none;
+}
+
+
+.footer-text {
+    color: #ffff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+  
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}

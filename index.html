@@ -49,6 +49,32 @@
       </div>
 
       <div id="product-list" class="product-grid"></div>
+
+      <div class="add-product">
+        <h2>Legg til nytt produkt</h2>
+        <form id="add-product-form" class="product-form-style">
+          <input type="text" name="title" placeholder="Produktnavn" required>
+          <input type="number" name="price" placeholder="Pris" required>
+          <input type="text" name="image" placeholder="Bilde-URL" required>
+          <textarea name="description" placeholder="Beskrivelse" required></textarea>
+          <select name="category" required>
+            <option value="">Velg kategori</option>
+            <option value="men's clothing">Herreklær</option>
+            <option value="women's clothing">Dameklær</option>
+            <option value="jewelery">Smykker</option>
+            <option value="electronics">Elektronikk</option>
+          </select>
+          <button type="submit">Legg til</button>
+        </form>
+      </div>
+
+      
+       <div id="editModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <form id="editForm" class="product-form-style"></form> 
+        </div>
+       </div>
     </section>
   </main>
 

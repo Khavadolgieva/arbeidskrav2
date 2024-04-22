@@ -11,7 +11,7 @@ function getProductIdFromUrl() {
 const selectedProductId = getProductIdFromUrl();
 
 // Fetch product data from API based on the product ID extracted from URL
-fetch(`https://fakestoreapi.com/products/${selectedProductId}`)
+fetch(`https://crudcrud.com/api/a805348230754af7a64e1f28d46fd804/products/${selectedProductId}`)
   .then(response => response.json())
   .then(product => {
     // Display product details

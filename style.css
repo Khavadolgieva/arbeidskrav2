@@ -98,6 +98,56 @@
   margin-bottom: 20px;
 }
   
+.product-form-style input,
+.product-form-style textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.product-form-style textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.add-product {
+  background-color: #f7f7f7; 
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px; 
+  margin: 20px auto; 
+}
+
+
+.add-product h2 {
+  text-align: center;
+  color: #A86A3D;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 9999; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
 button {
   padding: 10px 20px;
   font-size: 16px;
